@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.db479703.css",
+    "main.js": "/static/js/main.d415eae2.js",
+    "static/js/453.eb8124c4.chunk.js": "/static/js/453.eb8124c4.chunk.js",
+    "static/media/fotoboda1.png": "/static/media/fotoboda1.bbfcec6d142d12c7d21a.png",
+    "static/media/fotoboda1blancoymegro.png": "/static/media/fotoboda1blancoymegro.0f632d0f58526914f346.png",
+    "static/media/foto5.jpg": "/static/media/foto5.12303e53fbed00d15b24.jpg",
+    "static/media/luis.jpg": "/static/media/luis.095108cc7e4c5bb1d304.jpg",
+    "static/media/fotoboda2.jpg": "/static/media/fotoboda2.290dff2dbedab9903fb3.jpg",
+    "static/media/foto4.jpg": "/static/media/foto4.6a3601edea1362002376.jpg",
+    "static/media/foto2.jpg": "/static/media/foto2.1af3f97e463196b12f8e.jpg",
+    "static/media/foto3.jpg": "/static/media/foto3.2a1e727a9dc96c4e4011.jpg",
+    "static/media/logo.png": "/static/media/logo.d2b01599e881494cea51.png",
+    "index.html": "/index.html",
+    "main.db479703.css.map": "/static/css/main.db479703.css.map",
+    "main.d415eae2.js.map": "/static/js/main.d415eae2.js.map",
+    "453.eb8124c4.chunk.js.map": "/static/js/453.eb8124c4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.db479703.css",
+    "static/js/main.d415eae2.js"
+  ]
+}

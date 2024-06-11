@@ -1,0 +1,102 @@
+#hero {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  color: #fff;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero-left {
+  flex: 1;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero-right {
+  flex: 1;
+  background: url('../images/fotoboda1blancoymegro.jpg') no-repeat center center;
+  background-size: cover;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  animation: fadeInDown 1.5s ease-in-out;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+.hero-button {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s, transform 0.3s;
+  animation: fadeIn 2s ease-in-out;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero-button:hover {
+  background: #fff;
+  color: #333;
+  transform: scale(1.05);
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero {
+    flex-direction: column;
+  }
+
+  .hero-left, .hero-right {
+    width: 100%;
+    flex: none;
+  }
+
+  .hero-left {
+    padding: 20px;
+  }
+}
