@@ -18,6 +18,8 @@ const Header = () => {
   return (
     <>
       <Helmet>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
         <script type="application/ld+json">
           {`
           {
