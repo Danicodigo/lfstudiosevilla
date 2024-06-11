@@ -1,24 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.db479703.css",
-    "main.js": "/static/js/main.d415eae2.js",
+    "main.css": "/static/css/main.4c1e3359.css",
+    "main.js": "/static/js/main.40957101.js",
     "static/js/453.eb8124c4.chunk.js": "/static/js/453.eb8124c4.chunk.js",
-    "static/media/fotoboda1.png": "/static/media/fotoboda1.bbfcec6d142d12c7d21a.png",
-    "static/media/fotoboda1blancoymegro.png": "/static/media/fotoboda1blancoymegro.0f632d0f58526914f346.png",
-    "static/media/foto5.jpg": "/static/media/foto5.12303e53fbed00d15b24.jpg",
-    "static/media/luis.jpg": "/static/media/luis.095108cc7e4c5bb1d304.jpg",
-    "static/media/fotoboda2.jpg": "/static/media/fotoboda2.290dff2dbedab9903fb3.jpg",
-    "static/media/foto4.jpg": "/static/media/foto4.6a3601edea1362002376.jpg",
-    "static/media/foto2.jpg": "/static/media/foto2.1af3f97e463196b12f8e.jpg",
-    "static/media/foto3.jpg": "/static/media/foto3.2a1e727a9dc96c4e4011.jpg",
+    "static/media/fotoboda1blancoymegro.jpg": "/static/media/fotoboda1blancoymegro.9460f713783011a35b55.jpg",
+    "static/media/fotoboda160x40.webp": "/static/media/fotoboda160x40.483d2dc6fc19ef5da191.webp",
+    "static/media/foto60x40.webp": "/static/media/foto60x40.11f801a327418964bec1.webp",
+    "static/media/fotoboda260x40.webp": "/static/media/fotoboda260x40.6bcdb7ef34e5d6adc5d0.webp",
+    "static/media/foto60x402.webp": "/static/media/foto60x402.cbf2ff7c5230e62af62b.webp",
+    "static/media/luis.webp": "/static/media/luis.e3d718f33d489578bb63.webp",
+    "static/media/foto12x153.webp": "/static/media/foto12x153.2a1e9d9fb1badce11035.webp",
+    "static/media/foto12x15.webp": "/static/media/foto12x15.96074a655b126f1816dd.webp",
+    "static/media/foto12x152.webp": "/static/media/foto12x152.70361ee753f061a5f9a8.webp",
     "static/media/logo.png": "/static/media/logo.d2b01599e881494cea51.png",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.db479703.css.map": "/static/css/main.db479703.css.map",
-    "main.d415eae2.js.map": "/static/js/main.d415eae2.js.map",
+    "main.4c1e3359.css.map": "/static/css/main.4c1e3359.css.map",
+    "main.40957101.js.map": "/static/js/main.40957101.js.map",
     "453.eb8124c4.chunk.js.map": "/static/js/453.eb8124c4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.db479703.css",
-    "static/js/main.d415eae2.js"
+    "static/css/main.4c1e3359.css",
+    "static/js/main.40957101.js"
   ]
 }
