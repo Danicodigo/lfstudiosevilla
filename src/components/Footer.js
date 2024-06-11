@@ -57,8 +57,8 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-section">
           <h4>Contacto</h4>
-          <p>Teléfono: +34 123 456 789</p>
-          <p>Email: info@tuempresa.com</p>
+          <p>Teléfono: +34 646 30 22 10</p>
+          <p>Email: lfstudiosevilla@gmail.com</p>
         </div>
         <div className="footer-section">
           <h4>Síguenos en Redes Sociales</h4>

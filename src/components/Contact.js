@@ -85,22 +85,22 @@ const Contact = () => {
             <div className="contact-card">
               <FaPhone size={24} />
               <h3>Teléfono</h3>
-              <p>+34 123 456 789</p>
+              <p>+34 646 30 22 10</p>
             </div>
             <div className="contact-card">
               <FaEnvelope size={24} />
               <h3>Email</h3>
-              <p>info@tuempresa.com</p>
+              <p>lfstudiosevilla@gmail.com</p>
             </div>
             <div className="contact-card">
               <FaInstagram size={24} />
               <h3>Instagram</h3>
-              <p>@tuusuario</p>
+              <p>@lfstudiosevilla</p>
             </div>
             <div className="contact-card">
               <FaLinkedin size={24} />
               <h3>LinkedIn</h3>
-              <p>Tu Empresa</p>
+              <p>LL Studio Sevilla</p>
             </div>
           </div>
         </div>
