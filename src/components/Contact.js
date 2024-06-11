@@ -100,7 +100,7 @@ const Contact = () => {
             <div className="contact-card">
               <FaLinkedin size={24} />
               <h3>LinkedIn</h3>
-              <p>LL Studio Sevilla</p>
+              <p>Lf Studio Sevilla</p>
             </div>
           </div>
         </div>
