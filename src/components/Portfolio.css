@@ -11,12 +11,11 @@
 }
 
 #portfolio h2 {
-  text-align: center;
   font-size: 2rem;
   font-family: 'Montserrat', sans-serif;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color: #333;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
 }
 
 .portfolio-container {

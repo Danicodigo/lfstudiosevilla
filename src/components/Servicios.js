@@ -1,8 +1,42 @@
-import React from 'react';
-import './Servicios.css';
-import { Helmet } from 'react-helmet';
 
+import React, { useState } from 'react';
+import './Servicios.css';
+import folleto1 from '../images/bodapack1.jpg';
+import folleto2 from '../images/bodapack2.jpg';
+import folleto3 from '../images/bodapack3.jpg';
+import folleto4 from '../images/bodapack4.jpg';
+import folleto5 from '../images/comunion.jpg';
+import folleto6 from '../images/bautizo.jpg';
+import { Helmet } from 'react-helmet';
+const folletosBodas = [
+  { id: 1, src: folleto1, alt: 'Pack de Plata' },
+  { id: 2, src: folleto2, alt: 'Pack de Oro' },
+  { id: 3, src: folleto3, alt: 'Pack de Platino' },
+  { id: 4, src: folleto4, alt: 'Pack de Rubí' },
+];
+
+const folletosComuniones = [
+  { id: 5, src: folleto5, alt: 'Comuniones' },
+];
+
+const folletosBautizos = [
+  { id: 6, src: folleto6, alt: 'Bautizo' },
+];
 const Servicios = () => {
+  const [selectedFolleto, setSelectedFolleto] = useState(null);
+
+  const handleFolletoClick = (folleto) => {
+    setSelectedFolleto(folleto);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedFolleto(null);
+  };
+
+  const scrollToContact = () => {
+    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+    setSelectedFolleto(null);
+  };
   return (
     <section id="servicios">
       <Helmet>
@@ -54,26 +88,51 @@ const Servicios = () => {
         </script>
       </Helmet>
       <div className="container">
-        <h2>Servicios de Fotografía en Sevilla</h2>
-        <div className="servicios-list">
-          <div className="servicio-item">
-            <h3>Fotografía de Bodas</h3>
-            <p>Capturamos cada momento especial de tu gran día, desde la preparación hasta la celebración, creando recuerdos inolvidables. Nuestra especialidad es la fotografía de bodas en Sevilla, destacando por nuestra atención al detalle y estilo artístico.</p>
+        <h2 className="section-title">Nuestros Servicios</h2>
+        <p className="section-intro">Descubre nuestros paquetes y servicios fotográficos diseñados para cada ocasión especial.</p>
+
+        <div className="section">
+          <h3 className="section-subtitle">Bodas</h3>
+          <div className="folletos-grid">
+            {folletosBodas.map((folleto) => (
+              <div key={folleto.id} className="folleto-card" onClick={() => handleFolletoClick(folleto)}>
+                <img src={folleto.src} alt={folleto.alt} className="folleto-image" />
+              </div>
+            ))}
           </div>
-          <div className="servicio-item">
-            <h3>Fotografía de Bautizos</h3>
-            <p>Momentos inolvidables del bautizo de tu bebé, con un enfoque en los detalles y emociones. Nuestro servicio de fotografía de bautizos es el más destacado en Sevilla, asegurando que cada recuerdo sea capturado con precisión.</p>
+        </div>
+
+        <div className="section">
+          <h3 className="section-subtitle">Comuniones</h3>
+          <div className="folletos-grid-small">
+            {folletosComuniones.map((folleto) => (
+              <div key={folleto.id} className="folleto-card" onClick={() => handleFolletoClick(folleto)}>
+                <img src={folleto.src} alt={folleto.alt} className="folleto-image-small" />
+              </div>
+            ))}
           </div>
-          <div className="servicio-item">
-            <h3>Sesiones Familiares</h3>
-            <p>Fotos familiares que capturan la esencia y alegría de estar juntos. Ofrecemos las mejores sesiones de fotos familiares en Sevilla, creando recuerdos que durarás toda la vida.</p>
-          </div>
-          <div className="servicio-item">
-            <h3>Sesiones Individuales</h3>
-            <p>Retratos profesionales y personales que destacan tu mejor versión. Realizamos sesiones de fotos individuales en Sevilla con un toque único y profesional.</p>
+        </div>
+
+        <div className="section">
+          <h3 className="section-subtitle">Bautizos</h3>
+          <div className="folletos-grid-small">
+            {folletosBautizos.map((folleto) => (
+              <div key={folleto.id} className="folleto-card" onClick={() => handleFolletoClick(folleto)}>
+                <img src={folleto.src} alt={folleto.alt} className="folleto-image-small" />
+              </div>
+            ))}
           </div>
         </div>
       </div>
+
+      {selectedFolleto && (
+        <div className="modal" onClick={handleCloseModal}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <img src={selectedFolleto.src} alt={selectedFolleto.alt} className="modal-image" />
+            <button className="lo-quiero-button" onClick={scrollToContact}>Lo quiero</button>
+          </div>
+        </div>
+         )}
     </section>
   );
 };
