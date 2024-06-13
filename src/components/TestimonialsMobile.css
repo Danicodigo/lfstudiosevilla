@@ -3,7 +3,7 @@
 @media (max-width: 768px) {
     
     #testimonials-mobile {
-        background: linear-gradient(135deg, #e8e8e8, #c4c4c4);
+        background: linear-gradient(135deg, #e8e8e8, #a3a3a3);
         padding: 50px 20px;
         display: flex;
         flex-direction: column;

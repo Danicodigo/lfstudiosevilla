@@ -69,7 +69,7 @@ const Portfolio = () => {
         </script>
       </Helmet>
       <div className="portfolio-container">
-        <h2>Portafolio de Fotografía en Sevilla</h2>
+        
         <p className="portfolio-description">
           Aquí puedes ver una selección de nuestro trabajo en fotografía de bodas, sesiones de fotos y eventos especiales en Sevilla. Cada fotografía cuenta una historia única, capturada con profesionalismo y pasión.
         </p>
