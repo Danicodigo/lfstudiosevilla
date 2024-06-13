@@ -56,7 +56,6 @@ const SobreMi = () => {
         </script>
       </Helmet>
       <div className="container">
-        <h2>Sobre nosotros - LF Studio Sevilla</h2>
         <div className="about-content">
           <div className="about-text">
             <h3>¡Hola! Soy Luis Froilan</h3>

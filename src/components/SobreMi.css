@@ -7,7 +7,6 @@
   align-items: center;
   text-align: center;
   padding: 50px 20px;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
 }
@@ -15,21 +14,22 @@
 #sobre-mi .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding-top: 7%;
 }
 
 #sobre-mi h2 {
-  font-size: 3rem;
+  font-size: 2.5rem; /* Reduced size for better integration */
   font-family: 'Montserrat', sans-serif;
-  margin-bottom: 40px;
+  margin-bottom: 20px; /* Less margin for tighter integration */
   color: #333;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-.about-content,
-.philosophy-content,
-.stats-content,
-.quote-content {
-  margin-bottom: 40px;
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
 }
 
 .about-content {
@@ -66,9 +66,8 @@
   animation: parallax 5s infinite;
 }
 
-.philosophy-content,
-.stats-content,
-.quote-content {
+.philosophy-content {
+  margin-bottom: 40px;
   animation: fadeIn 2s ease-in-out;
 }
 
@@ -86,6 +85,7 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
+  animation: fadeIn 2s ease-in-out;
 }
 
 .stat-item h4 {
@@ -103,6 +103,11 @@
   font-size: 2rem;
   margin-bottom: 10px;
   color: #333;
+}
+
+.quote-content {
+  margin-bottom: 40px;
+  animation: fadeIn 2s ease-in-out;
 }
 
 .quote-content blockquote {
@@ -138,6 +143,16 @@
 }
 
 @media (max-width: 768px) {
+  #sobre-mi {
+    padding: 20px;
+  }
+
+  #sobre-mi h2 {
+    font-size: 2rem; /* Adjusted for mobile */
+    margin-bottom: 20px;
+    padding: 5px 15px;
+  }
+
   .about-content {
     flex-direction: column;
     text-align: center;
@@ -153,7 +168,21 @@
     padding-left: 0;
   }
 
+  .about-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
   .quote-content blockquote {
     font-size: 1.2rem;
+  }
+
+  .stats-content {
+    flex-direction: column;
+  }
+
+  .stat-item {
+    flex: none;
+    margin: 10px 0;
   }
 }
