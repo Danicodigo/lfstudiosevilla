@@ -10,8 +10,10 @@ import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { Helmet } from 'react-helmet';
-
+import TestimonialsMobile from './components/TestimonialsMobile';
+import { useMediaQuery } from 'react-responsive';
 function App() {
+  const isDesktop = useMediaQuery({ minWidth: 769 });
   return (
     <div className="App">
       <Helmet>
@@ -27,7 +29,7 @@ function App() {
       <SobreMi />
       <Servicios />
       <Portfolio />
-      <Testimonials />
+      {isDesktop ? <Testimonials /> : <TestimonialsMobile />}
       <Contact />
       <Footer />
     </div>

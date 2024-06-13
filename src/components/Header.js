@@ -19,6 +19,9 @@ const Header = () => {
     const heroSectionId = isMobile ? 'hero-mobile' : 'hero-desktop';
     if (sectionId === 'hero') {
       document.getElementById(heroSectionId).scrollIntoView({ behavior: 'smooth' });
+    } else if (sectionId === 'testimonials') {
+      const testimonialsSectionId = isMobile ? 'testimonials-mobile' : 'testimonials';
+      document.getElementById(testimonialsSectionId).scrollIntoView({ behavior: 'smooth' });
     } else {
       document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
     }

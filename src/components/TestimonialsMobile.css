@@ -1,0 +1,107 @@
+/* src/components/TestimonialsMobile.css */
+
+@media (max-width: 768px) {
+    
+    #testimonials-mobile {
+        background: linear-gradient(135deg, #e8e8e8, #c4c4c4);
+        padding: 50px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      
+      #testimonials-mobile h2 {
+        font-size: 2.5rem;
+        font-family: 'Montserrat', sans-serif;
+        margin-bottom: 20px;
+        color: #333;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+      }
+      
+      .intro-text {
+        font-size: 1rem;
+        color: #555;
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 40px;
+        max-width: 800px;
+      }
+      
+      .testimonials-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+      }
+      
+      .testimonial-row {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        padding: 20px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      
+      .testimonial-row:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+      
+      .testimonial-text {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-width: 100%;
+      }
+      
+      .client-info {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        justify-content: center;
+      }
+      
+      .client-photo {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      
+      .testimonial-text-content {
+        font-size: 1.1rem;
+        font-family: 'Roboto', sans-serif;
+        color: #333;
+        margin: 10px 0;
+      }
+      
+      .testimonial-author {
+        font-size: 1rem;
+        color: #555;
+        font-family: 'Roboto', sans-serif;
+      }
+      
+      .testimonial-date,
+      .testimonial-description {
+        font-size: 0.9rem;
+        color: #777;
+        font-family: 'Roboto', sans-serif;
+      }
+      
+      .event-photo-mobile-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      
+      .event-mobile-photo {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        object-fit: cover;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+    }
+    

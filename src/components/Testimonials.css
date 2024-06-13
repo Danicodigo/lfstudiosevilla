@@ -1,19 +1,18 @@
+/* src/components/Testimonials.css */
+
 #testimonials {
   background: linear-gradient(135deg, #e8e8e8, #c4c4c4);
-  min-height: 100vh;
+  padding: 50px 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 20px;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 #testimonials h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-family: 'Montserrat', sans-serif;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   color: #333;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
@@ -22,122 +21,104 @@
   font-size: 1rem;
   color: #555;
   font-family: 'Roboto', sans-serif;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   max-width: 800px;
-  margin: 0 auto 30px auto;
 }
 
-.testimonial-slide {
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
-  padding: 0 10px;
-  width: 100%; /* Asegurar que el ancho sea 100% */
-  box-sizing: border-box;
-}
-
-.testimonial-card {
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid #ddd;
-  padding: 20px;
-  margin: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
-  border-radius: 8px;
-  width: 100%;
-  max-width: 600px; /* Ajustar a un máximo de 600px para pantallas pequeñas */
+.testimonials-wrapper {
   display: flex;
-  flex-direction: column; /* Cambiar la dirección a columna */
-  align-items: center;
-  animation: fadeIn 1s ease-in-out;
-  box-sizing: border-box; /* Asegurar que el padding no desborde el contenedor */
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
 }
 
-.testimonial-card:hover {
+.testimonial-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-row:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.testimonial-content {
-  text-align: center; /* Centrar texto */
-  padding: 0 10px; /* Reducir padding */
+.photo-right .testimonial-text {
+  order: 1;
 }
 
-.client-photo {
-  width: 80px; /* Ajustar tamaño de la foto */
-  height: 80px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.photo-right .event-photo-container {
+  order: 2;
+}
+
+.photo-left .testimonial-text {
+  order: 2;
+}
+
+.photo-left .event-photo-container {
+  order: 1;
 }
 
 .testimonial-text {
-  font-size: 1.2rem; /* Ajustar tamaño de fuente */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 60%;
+}
+
+.client-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.client-photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-text-content {
+  font-size: 1.1rem;
   font-family: 'Roboto', sans-serif;
-  margin-bottom: 10px;
+  color: #333;
+  margin: 10px 0;
 }
 
 .testimonial-author {
-  font-size: 1rem; /* Ajustar tamaño de fuente */
+  font-size: 1rem;
   color: #555;
   font-family: 'Roboto', sans-serif;
 }
 
 .testimonial-date,
 .testimonial-description {
-  font-size: 0.9rem; /* Ajustar tamaño de fuente */
+  font-size: 0.9rem;
   color: #777;
   font-family: 'Roboto', sans-serif;
-  margin-top: 5px;
 }
 
 .event-photo-container {
-  margin-top: 20px;
-  width: 100%;
+  max-width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .event-photo {
   width: 100%;
   height: auto;
-  border-radius: 8px;
+  border-radius: 10px;
   object-fit: cover;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.slick-arrow {
-  z-index: 1;
-}
-
-.slick-arrow i {
-  font-size: 2rem;
-  color: #333;
-  transition: color 0.3s;
-}
-
-.slick-arrow:hover i {
-  color: #9488f3;
-}
-
-.slick-dots li button:before {
-  font-size: 12px;
-  color: #333;
-}
-
-.slick-dots li.slick-active button:before {
-  color: #9488f3;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 @media (max-width: 768px) {
   #testimonials {
     display: none; /* Ocultar el componente en móviles */

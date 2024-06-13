@@ -1,6 +1,6 @@
-// src/components/Testimonials.js
+// src/components/TestimonialsMobile.js
 import React from 'react';
-import './Testimonials.css';
+import './TestimonialsMobile.css';
 import { Helmet } from 'react-helmet';
 import { useMediaQuery } from 'react-responsive';
 import foto1 from '../images/foto12x152.webp';
@@ -14,8 +14,8 @@ import evento3 from '../images/fotoboda160x40.webp';
 import evento4 from '../images/fotoboda260x40.webp';
 import evento5 from '../images/foto60x40.webp';
 
-const Testimonials = () => {
-  const isDesktop = useMediaQuery({ minWidth: 769 });
+const TestimonialsMobile = () => {
+  const isMobile = useMediaQuery({ maxWidth: 768 });
 
   const testimonials = [
     {
@@ -95,8 +95,8 @@ const Testimonials = () => {
           `}
         </script>
       </Helmet>
-      {isDesktop && (
-        <section id="testimonials">
+      {isMobile && (
+        <section id="testimonials-mobile">
           <div className="container">
             <h2>Testimonios de Nuestros Clientes en Sevilla</h2>
             <p className="intro-text">
@@ -104,7 +104,7 @@ const Testimonials = () => {
             </p>
             <div className="testimonials-wrapper">
               {testimonials.map((testimonial, index) => (
-                <div className={`testimonial-row ${index % 2 === 0 ? 'photo-right' : 'photo-left'}`} key={index}>
+                <div className="testimonial-row" key={index}>
                   <div className="testimonial-text">
                     <div className="client-info">
                       <img src={testimonial.clientPhoto} alt={`Foto de ${testimonial.author}`} className="client-photo" />
@@ -116,8 +116,8 @@ const Testimonials = () => {
                     <p className="testimonial-text-content">"{testimonial.text}"</p>
                     <p className="testimonial-description">{testimonial.description}</p>
                   </div>
-                  <div className="event-photo-container">
-                    <img src={testimonial.eventPhoto} alt={`Evento de ${testimonial.author}`} className="event-photo" />
+                  <div className="event-photo-mobile-container">
+                    <img src={testimonial.eventPhoto} alt={`Evento de ${testimonial.author}`} className="event-mobile-photo" />
                   </div>
                 </div>
               ))}
@@ -129,4 +129,4 @@ const Testimonials = () => {
   );
 };
 
-export default Testimonials;
+export default TestimonialsMobile;
