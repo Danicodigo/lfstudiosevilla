@@ -102,22 +102,22 @@ const Servicios = () => {
           </div>
         </div>
 
-        <div className="section">
+        <div className="section-small">
           <h3 className="section-subtitle">Comuniones</h3>
           <div className="folletos-grid-small">
             {folletosComuniones.map((folleto) => (
-              <div key={folleto.id} className="folleto-card" onClick={() => handleFolletoClick(folleto)}>
+              <div key={folleto.id} className="folleto-small-card" onClick={() => handleFolletoClick(folleto)}>
                 <img src={folleto.src} alt={folleto.alt} className="folleto-image-small" />
               </div>
             ))}
           </div>
         </div>
 
-        <div className="section">
+        <div className="section-small">
           <h3 className="section-subtitle">Bautizos</h3>
           <div className="folletos-grid-small">
             {folletosBautizos.map((folleto) => (
-              <div key={folleto.id} className="folleto-card" onClick={() => handleFolletoClick(folleto)}>
+              <div key={folleto.id} className="folleto-small-card" onClick={() => handleFolletoClick(folleto)}>
                 <img src={folleto.src} alt={folleto.alt} className="folleto-image-small" />
               </div>
             ))}
