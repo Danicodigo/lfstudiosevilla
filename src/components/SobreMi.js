@@ -56,8 +56,10 @@ const SobreMi = () => {
         </script>
       </Helmet>
       <div className="container">
+      <h2>Sobre nosotros</h2>
         <div className="about-content">
           <div className="about-text">
+           
             <h3>¡Hola! Soy Luis Froilan</h3>
             <p>
               Con una pasión inigualable por la fotografía, he dedicado mi vida a capturar los momentos más especiales y fugaces de las personas. Junto con mi talentoso equipo de fotógrafos y videógrafos en Sevilla, ofrecemos un enfoque artístico y personalizado para cada evento, asegurándonos de que cada imagen cuente una historia única.

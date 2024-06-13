@@ -98,7 +98,7 @@ const TestimonialsMobile = () => {
       {isMobile && (
         <section id="testimonials-mobile">
           <div className="container">
-            <h2>Testimonios de Nuestros Clientes en Sevilla</h2>
+            <h2>Testimonios de nuestros clientes</h2>
             <p className="intro-text">
               Nos sentimos honrados de haber sido parte de los momentos más especiales de nuestros clientes. Aquí tienes algunos de los testimonios que reflejan nuestra dedicación y pasión por la fotografía.
             </p>

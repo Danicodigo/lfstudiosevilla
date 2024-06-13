@@ -14,22 +14,14 @@
 #sobre-mi .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding-top: 7%;
 }
 
 #sobre-mi h2 {
-  font-size: 2.5rem; /* Reduced size for better integration */
-  font-family: 'Montserrat', sans-serif;
-  margin-bottom: 20px; /* Less margin for tighter integration */
+  font-size: 2.1rem;
+  font-family:  'Poppins', sans-serif;
+  margin-bottom: 20px;
   color: #333;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-  position: relative;
-  display: inline-block;
-  padding: 10px 20px;
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  z-index: 1;
 }
 
 .about-content {

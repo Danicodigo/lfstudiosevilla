@@ -71,7 +71,7 @@ const Footer = () => {
         </div>
         <div className="footer-section">
           <h4>Información</h4>
-          <p>&copy; 2023 Tu Empresa. Todos los derechos reservados.</p>
+          <p>&copy; 2024 Lf Studio Sevilla. Todos los derechos reservados.</p>
           <p>Fotografía de bodas, sesiones de fotos y más en Sevilla.</p>
         </div>
       </div>

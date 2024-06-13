@@ -98,6 +98,7 @@ const Testimonials = () => {
       {isDesktop && (
         <section id="testimonials">
           <div className="container">
+            <h2>Testimonios de nuestros clientes</h2>
             <p className="intro-text">
               Nos sentimos honrados de haber sido parte de los momentos más especiales de nuestros clientes. Aquí tienes algunos de los testimonios que reflejan nuestra dedicación y pasión por la fotografía.
             </p>
