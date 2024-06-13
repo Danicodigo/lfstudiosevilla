@@ -1,19 +1,36 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import './Header.css';
 import logo from '../images/logo.png';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const handleResize = () => {
+    setIsMobile(window.innerWidth <= 768);
+  };
+
   const scrollToSection = (sectionId) => {
-    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+    const heroSectionId = isMobile ? 'hero-mobile' : 'hero-desktop';
+    if (sectionId === 'hero') {
+      document.getElementById(heroSectionId).scrollIntoView({ behavior: 'smooth' });
+    } else {
+      document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+    }
     setMenuOpen(false);
   };
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
     <>

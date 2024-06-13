@@ -1,0 +1,63 @@
+#hero-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #hero-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('../images/fotoboda1blancoymegro.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    position: relative;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text readability */
+    z-index: 1;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-family: 'Dancing Script', cursive;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .hero-button {
+    background: #fff;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s, transform 0.3s;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .hero-button:hover {
+    background: #333;
+    color: #fff;
+    transform: scale(1.05);
+  }
+}

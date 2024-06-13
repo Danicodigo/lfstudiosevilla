@@ -1,8 +1,8 @@
-// src/App.js
 import React from 'react';
 import './App.css';
 import Header from './components/Header';
-import Hero from './components/Hero';
+import HeroDesktop from './components/HeroDesktop';
+import HeroMobile from './components/HeroMobile';
 import SobreMi from './components/SobreMi';
 import Servicios from './components/Servicios';
 import Portfolio from './components/Portfolio';
@@ -22,7 +22,8 @@ function App() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Helmet>
       <Header />
-      <Hero />
+      <HeroDesktop />
+      <HeroMobile />
       <SobreMi />
       <Servicios />
       <Portfolio />
