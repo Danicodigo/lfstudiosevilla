@@ -12,12 +12,14 @@ import Footer from './components/Footer';
 import { Helmet } from 'react-helmet';
 import TestimonialsMobile from './components/TestimonialsMobile';
 import { useMediaQuery } from 'react-responsive';
+import favicon from '../src/images/favicon.ico'
 function App() {
   const isDesktop = useMediaQuery({ minWidth: 769 });
   return (
     <div className="App">
       <Helmet>
         <title>LF Studio Sevilla - Fotografía Profesional</title>
+        <link rel="icon" href={favicon} type="image/x-icon" />
         <meta name="description" content="LF Studio Sevilla ofrece servicios de fotografía profesional para bodas, bautizos, sesiones familiares e individuales en Sevilla y alrededores. Capturamos tus momentos más especiales con pasión y profesionalismo." />
         <meta name="keywords" content="fotografía, fotógrafo, bodas, fotógrafos cerca de mi, sesión de fotos, fotografía cerca de mi, sesiones de fotos, fotografías boda, fotografías pareja, Sevilla" />
         <meta name="author" content="LF Studio Sevilla" />
